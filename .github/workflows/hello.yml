@@ -1,7 +1,9 @@
-name: Contexts
+name: Status check functions
 on: push
 jobs:
-  print:
+  fail:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "${{ github.actor }}"
+      - run: exit 1
+      - run: echo "Hello"
+        if: ${{ failure() }}
