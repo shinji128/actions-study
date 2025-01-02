@@ -1,4 +1,4 @@
-name: workflow_dispatch sample 1
+name: Workflow Dispatch Sample
 on: workflow_dispatch
 jobs:
   printLog:
